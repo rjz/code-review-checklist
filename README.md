@@ -7,7 +7,7 @@ requests:
 Legibility
 -------------------------------------------
 
-  - [ ] reinforce patterns esablished by the project, team, and community
+  - [ ] reinforce patterns established by the project, team, and community
   - [ ] follow style guidelines
   - [ ] reuse existing libraries, methods, and types
   - [ ] use suggestive names for functions, variables, and classes
@@ -17,7 +17,7 @@ Functionality
 -------------------------------------------
 
   - [ ] implement the spec
-  - [ ] anticipate and handles failure modes
+  - [ ] anticipate and handle failure modes
   - [ ] avoid (or adequately justifies) obvious performance issues
   - [ ] provide appropriate feedback to the user
   - [ ] expose logs, errors, and other runtime debugging details as needed
