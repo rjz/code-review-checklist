@@ -45,6 +45,7 @@ VCS Hygiene
   - [ ] reference external issues, tickets, and bugs as needed
   - [ ] use incremental, atomic commits
   - [ ] avoid binaries, logs, local configurations, or other unwanted artifacts
+  - [ ] omit environment-specific files and artifacts
 
 License
 -------------------------------------------
