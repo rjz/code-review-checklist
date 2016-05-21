@@ -1,12 +1,13 @@
 Code Review Checklist
 ===========================================
 
-A hardly exhaustive collection of considerations when peer-reviewing software.
+> A hardly exhaustive collection of considerations when peer-reviewing software.
+
+- - -
 
 Clean, merge-ready pull requests:
 
-Functionality
--------------------------------------------
+##### Functionality
 
   - [ ] implement relevant specification(s)
   - [ ] anticipate and address failure modes
@@ -14,8 +15,7 @@ Functionality
   - [ ] provide appropriate user feedback
   - [ ] expose logs, errors, and other runtime debugging details as needed
 
-Testing
--------------------------------------------
+##### Testing
 
   - [ ] secure behaviors described in relevant specification(s)
   - [ ] test public interfaces
@@ -23,8 +23,7 @@ Testing
   - [ ] benchmark recognized performance issues
   - [ ] run green
 
-Legibility
--------------------------------------------
+##### Legibility
 
   - [ ] embrace style and patterns established by the project, team, and
       community
@@ -32,8 +31,7 @@ Legibility
   - [ ] use suggestive names for functions, variables, and classes
   - [ ] document public interfaces as appropriate
 
-Security
--------------------------------------------
+##### Security
 
   - [ ] bound and sanitize inputs
   - [ ] sanitize outputs, including analytics and [logs][sanitize-logs]
@@ -42,8 +40,7 @@ Security
       etc)
   - [ ] isolate platform-/environment-specific functionality
 
-VCS Hygiene
--------------------------------------------
+##### VCS Hygiene
 
   - [ ] provide [clear, useful commit messages][git-commit]
   - [ ] [reference external issues, tickets, and bugs][supplemental-docs] where
@@ -52,8 +49,7 @@ VCS Hygiene
   - [ ] avoid binaries, logs, local configurations, environment-specific files,
       plaintext secrets, or other unwanted artifacts
 
-License
--------------------------------------------
+##### License
 
 [MIT](LICENSE) licensed - fork, contribute, and enjoy!
 
