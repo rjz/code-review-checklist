@@ -1,54 +1,65 @@
 Code Review Checklist
 ===========================================
 
-A hardly exhaustive collection of reminders that clean, merge-ready pull
-requests:
+A hardly exhaustive collection of considerations when peer-reviewing software.
 
-Legibility
--------------------------------------------
-
-  - [ ] reinforce patterns established by the project, team, and community
-  - [ ] follow style guidelines
-  - [ ] reuse existing libraries, methods, and types
-  - [ ] use suggestive names for functions, variables, and classes
-  - [ ] document public interfaces (if required)
+Clean, merge-ready pull requests:
 
 Functionality
 -------------------------------------------
 
-  - [ ] implement the spec
-  - [ ] anticipate and handle failure modes
+  - [ ] implement relevant specification(s)
+  - [ ] anticipate and address failure modes
   - [ ] avoid (or adequately justifies) obvious performance issues
-  - [ ] provide appropriate feedback to the user
+  - [ ] provide appropriate user feedback
   - [ ] expose logs, errors, and other runtime debugging details as needed
 
 Testing
 -------------------------------------------
 
-  - [ ] test public interfaces at an appropriate level
+  - [ ] secure behaviors described in relevant specification(s)
+  - [ ] test public interfaces
   - [ ] cover anticipated failure modes
+  - [ ] benchmark recognized performance issues
   - [ ] run green
+
+Legibility
+-------------------------------------------
+
+  - [ ] embrace style and patterns established by the project, team, and
+      community
+  - [ ] consume existing libraries, methods, and types
+  - [ ] use suggestive names for functions, variables, and classes
+  - [ ] document public interfaces as appropriate
 
 Security
 -------------------------------------------
 
-  - [ ] sanitize inputs
-  - [ ] sanitize outputs, including analytics and logs
-  - [ ] recognize and address common vulnerabilities (SQL injection, XSS,
-      buffer overruns, etc)
+  - [ ] bound and sanitize inputs
+  - [ ] sanitize outputs, including analytics and [logs][sanitize-logs]
+  - [ ] recognize and address common vulnerabilities ([SQL
+      injection][sql-injection], [XSS][xss], [buffer overruns][buffer-overflow],
+      etc)
   - [ ] isolate platform-/environment-specific functionality
 
 VCS Hygiene
 -------------------------------------------
 
-  - [ ] provide a commit message with a clear, useful description
-  - [ ] reference external issues, tickets, and bugs as needed
+  - [ ] provide [clear, useful commit messages][git-commit]
+  - [ ] [reference external issues, tickets, and bugs][supplemental-docs] where
+      they exist
   - [ ] use incremental, atomic commits
-  - [ ] avoid binaries, logs, local configurations, or other unwanted artifacts
-  - [ ] omit environment-specific files and artifacts
+  - [ ] avoid binaries, logs, local configurations, environment-specific files,
+      plaintext secrets, or other unwanted artifacts
 
 License
 -------------------------------------------
 
 [MIT](LICENSE) licensed - fork, contribute, and enjoy!
 
+[git-commit]: http://chris.beams.io/posts/git-commit/
+[supplemental-docs]: https://rjzaworski.com/2015/05/supplemental-documentation
+[sql-injection]: https://www.owasp.org/index.php/SQL_Injection
+[xss]: https://www.owasp.org/index.php/XSS
+[buffer-overflow]: https://www.owasp.org/index.php/Buffer_Overflow
+[sanitize-logs]: https://www.owasp.org/index.php/Logging_Cheat_Sheet#Data_to_exclude
