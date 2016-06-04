@@ -40,6 +40,13 @@ Clean, merge-ready pull requests:
       etc)
   - [ ] isolate platform-/environment-specific functionality
 
+##### Dependency Management
+  - [ ] avoids (or adequately justifies) the addition of 3rd-party code
+  - [ ] ensures the license is appropriate for inclusion
+  - [ ] the functionality is truly better-off as a dependency instead of a 1st-party implementation
+  - [ ] the 3rd-party code does not conflict with 1st-party standards
+  - [ ] the 3rd-party code is actively maintained
+
 ##### VCS Hygiene
 
   - [ ] provide [clear, useful commit messages][git-commit]
