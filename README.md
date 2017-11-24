@@ -30,6 +30,7 @@ Clean, merge-ready pull requests:
   - [ ] consume existing libraries, methods, and types
   - [ ] use suggestive names for functions, variables, and classes
   - [ ] document public interfaces as appropriate
+  - [ ] remove (or adequately support) TODOs, legacy code, and hacks
 
 ##### Security
 
